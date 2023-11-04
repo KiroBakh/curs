@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "../styles/Auth.css";
-import { useAuth } from "./AuthContext"; // Импортируйте useAuth
+import { useAuth } from "./AuthContext"; 
 
 export default function AuthLogin() {
-  const { setAuthenticated } = useAuth(); // Используйте setAuthenticated из контекста
+  const { setAuthenticated } = useAuth(); 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");

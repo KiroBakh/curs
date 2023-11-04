@@ -13,7 +13,6 @@ function Header({ username, password }) {
     del = true;
   }
 
-  // Определите, когда показывать вкладку "Конструктор"
   const showConstructorLink =
     authenticated || (username === "admin" && password === "admin");
 

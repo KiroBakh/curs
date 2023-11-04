@@ -1,7 +1,6 @@
 const { Employee } = require('../models/models');
 
 class EmployeeController {
-    // Получение всех сотрудников
     static async getAllEmployees(req, res) {
         try {
             const employees = await Employee.findAll();
@@ -11,7 +10,6 @@ class EmployeeController {
         }
     }
 
-    // Получение сотрудника по ID
     static async getEmployeeById(req, res) {
         const id = parseInt(req.params.id);
         try {
@@ -26,7 +24,6 @@ class EmployeeController {
         }
     }
 
-    // Создание нового сотрудника
     static async createEmployee(req, res) {
         const { name, position, rank, contactInformation } = req.body;
         try {
@@ -42,7 +39,6 @@ class EmployeeController {
         }
     }
 
-    // Обновление сотрудника
     static async updateEmployee(req, res) {
         const id = parseInt(req.params.id);
         const { name, position, rank, contactInformation } = req.body;
@@ -63,7 +59,6 @@ class EmployeeController {
         }
     }
 
-    // Удаление сотрудника
     static async deleteEmployee(req, res) {
         const id = parseInt(req.params.id);
         try {

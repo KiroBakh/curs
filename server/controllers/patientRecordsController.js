@@ -1,7 +1,6 @@
 const { PatientRecord } = require('../models/models');
 
 class PatientRecordController {
-    // Получение всех записей о пациентах
     static async getAllPatientRecords(req, res) {
         try {
             const patientRecords = await PatientRecord.findAll();
@@ -11,7 +10,6 @@ class PatientRecordController {
         }
     }
 
-    // Получение записи о пациенте по ID
     static async getPatientRecordById(req, res) {
         const id = parseInt(req.params.id);
         try {
@@ -26,7 +24,6 @@ class PatientRecordController {
         }
     }
 
-    // Создание новой записи о пациенте
     static async createPatientRecord(req, res) {
         console.log(req.body);
         const { name, employeeId, diagnosis, status, admissiondate } = req.body;
@@ -64,7 +61,6 @@ class PatientRecordController {
         }
     }
 
-    // Удаление записи о пациенте
     static async deletePatientRecord(req, res) {
         const id = parseInt(req.params.id);
         try {

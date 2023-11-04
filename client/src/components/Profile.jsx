@@ -40,7 +40,7 @@ export default function Profile() {
       if (chatMessages.length === 0) {
         setTimeout(() => {
           const automatedResponse =
-            "Здрастуйте! Я ваш особистий асистент, незабаром ми зв'яжемо вас із вашим лікарем";
+            "Вітаю! Я ваш особистий асистент, незабаром лікар звʼяжеться з вами.";
           setAutomatedResponses([...automatedResponses, automatedResponse]);
         }, 1500);
       }

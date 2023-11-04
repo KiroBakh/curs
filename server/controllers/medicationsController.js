@@ -1,7 +1,6 @@
 const { Medication } = require('../models/models');
 
 class MedicationController {
-    // Получение всех лекарств
     static async getAllMedications(req, res) {
         try {
             const medications = await Medication.findAll();
@@ -11,7 +10,6 @@ class MedicationController {
         }
     }
 
-    // Получение лекарства по ID
     static async getMedicationById(req, res) {
         const id = parseInt(req.params.id);
         try {
@@ -26,7 +24,6 @@ class MedicationController {
         }
     }
 
-    // Создание нового лекарства
     static async createMedication(req, res) {
         const { name, dosage, availability } = req.body;
         try {
@@ -41,7 +38,6 @@ class MedicationController {
         }
     }
 
-    // Обновление лекарства
     static async updateMedication(req, res) {
         const id = parseInt(req.params.id);
         const { name, dosage, availability } = req.body;
@@ -61,7 +57,6 @@ class MedicationController {
         }
     }
 
-    // Удаление лекарства
     static async deleteMedication(req, res) {
         const id = parseInt(req.params.id);
         try {

@@ -1,4 +1,3 @@
-// Import necessary modules
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "../styles/EmployeeConstructor.css";
@@ -28,7 +27,6 @@ export default function EmployeeConstructor() {
   };
 
   const handleAddWorker = () => {
-    // Create a new worker object
     const newWorker = {
       name,
       position,
@@ -39,7 +37,6 @@ export default function EmployeeConstructor() {
     axios
       .post("http://localhost:3000/api/employees", newWorker)
       .then(() => {
-        // After adding, refresh the worker list and reset input fields
         fetchWorkers();
         setName("");
         setPosition("");
@@ -87,7 +84,6 @@ export default function EmployeeConstructor() {
   const handleDeleteWorker = (id) => {
    console.log(id);
    if (id) {
-     // Check if the ID is defined
      axios
        .delete(`http://localhost:3000/api/employees/${id}`)
        .then(() => {
@@ -101,7 +97,6 @@ export default function EmployeeConstructor() {
    }
  };
 
-  // Function to handle worker selection
   const selectWorker = (worker) => {
     setSelectedWorker(worker);
     setName(worker.name);

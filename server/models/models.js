@@ -54,10 +54,6 @@ const PatientRecord = sequelize.define('PatientRecord', {
 });
 
 
-
-
-
-
 Employee.hasMany(PatientRecord, { foreignKey: 'employeeId' });
 PatientRecord.belongsTo(Employee, { foreignKey: 'employeeId' });
 
