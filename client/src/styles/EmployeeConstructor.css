@@ -1,0 +1,73 @@
+
+.worker-constructor {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-height: 74vh;
+}
+
+.worker-list {
+    flex: 1;
+    padding: 10px;
+}
+
+.worker-list h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.worker-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.worker-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.worker-list button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.worker-form {
+    flex: 1;
+    padding: 10px;
+}
+
+.worker-form h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.action-button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,93 @@
+.header {
+    width: 100%;
+    height: 70px;
+    background-image: url('https://phonoteka.org/uploads/posts/2022-01/1642437752_17-phonoteka-org-p-kamuflyazh-piksel-fon-bolshogo-razresheniy-17.jpg');
+    background-size: cover;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.links a {
+    margin-left: 22px;
+    align-items: center;
+    padding: 20px 10px 0 0;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    color: #17dd42;
+    text-decoration: none;
+    height: 70px;
+}
+
+.links .logo {
+    margin-left: 15px;
+    padding: 7px;
+    font-size: 25px;
+    color: #17dd42;
+    border: 3px solid #075b12;
+    border-radius: 7px;
+    font-weight: 700;
+    background-color: #00481a3b;
+    text-decoration: none;
+}
+
+.home-title {
+    margin-top: 15%;
+    height: 100px;
+    padding: 10px;
+}
+
+.active {
+    border-bottom: 3px solid #07d400;
+}
+
+.homePage {
+    height: 80vh;
+    background: url('../../public//img/backgr.jpg') no-repeat;
+    background-size: cover;
+    padding: 10px;
+}
+
+.title {
+    margin: 13% auto;
+    font-size: 80px;
+    border: 2px solid aqua;
+    border-radius: 30px;
+    width: 700px;
+    text-align: center;
+    background: linear-gradient(45deg, #2aafbe, #36da7a, #e335c0);
+    background-size: 200% 200%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: colorChange 5s infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 75% 95%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.auth a {
+    position: absolute;
+    right: 5px;
+    color: #35e378;
+    background-color: #2aafbe;
+}
+
+.auth a:hover {
+    background-color: #2aafbea0;
+    color: #35e378;
+}
